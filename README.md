@@ -1,3 +1,3 @@
-# 2023-S1-US-18
+# 2024-S1-DX-1
 
-this project ....
+This DDT project aims to observe 11 sources with RSR
