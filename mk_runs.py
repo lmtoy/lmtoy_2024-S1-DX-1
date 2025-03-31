@@ -11,6 +11,9 @@ project="2024-S1-DX-1"
 #        obsnums per source (make it negative if not added to the final combination)
 on = {}
 
+on["PG1202+281"] = \
+ [ 132046, 132047, 132048,]
+
 on["PG1402+261"] = \
  [ 131808, 131809, 131810, 131812,-131813,]
 
@@ -18,11 +21,13 @@ on["PG1402+261"] = \
 
 #        common parameters per source on the first dryrun (run1a, run2a)
 pars1 = {}
+pars1["PG1202+281"] = ""
 pars1["PG1402+261"] = ""
 
 
 #        common parameters per source on subsequent runs (run1b, run2b), e.g. bank=0 for WARES
 pars2 = {}
+pars2["PG1202+281"] = ""
 pars2["PG1402+261"] = ""
 
 
