@@ -11,6 +11,9 @@ project="2024-S1-DX-1"
 #        obsnums per source (make it negative if not added to the final combination)
 on = {}
 
+on["PG0947+396"] = \
+ [ 143925, 143926, 143927,]
+
 on["PG1202+281"] = \
  [ 132046, 132047, 132048,]
 
@@ -26,6 +29,7 @@ on["PG1427+480"] = \
 
 #        common parameters per source on the first dryrun (run1a, run2a)
 pars1 = {}
+pars1["PG0947+396"] = ""
 pars1["PG1202+281"] = "qagrade=3 speczoom=80,3"
 pars1["PG1402+261"] = "qagrade=3"
 pars1["PG1425+267"] = "qagrade=3 speczoom=80,3"
@@ -33,6 +37,7 @@ pars1["PG1427+480"] = "qagrade=3"
 
 #        common parameters per source on subsequent runs (run1b, run2b), e.g. bank=0 for WARES
 pars2 = {}
+pars2["PG0947+396"] = ""
 pars2["PG1202+281"] = ""
 pars2["PG1402+261"] = ""
 pars2["PG1425+267"] = ""
@@ -41,4 +46,4 @@ pars2["PG1427+480"] = ""
 
 
 if __name__ == '__main__':    
-    runs.mk_runs(project, on, pars1, pars2, sys.argv)
+    runs.mk_runs(project, on, pars1, pars2, None, sys.argv)
