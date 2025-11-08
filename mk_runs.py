@@ -11,6 +11,12 @@ project="2024-S1-DX-1"
 #        obsnums per source (make it negative if not added to the final combination)
 on = {}
 
+on["PG0804+761"] = \
+ [ 146283, 146284,]
+
+on["PG0953+414"] = \
+ [ 145841, 145842, 145843, 145845, 145846, 145847,]
+
 on["PG0947+396"] = \
  [ 143925, 143926, 143927,]
 
@@ -23,12 +29,14 @@ on["PG1402+261"] = \
 on["PG1425+267"] = \
  [ 136910, 136911, 136912, 136914, 136915, 136916, 136918, 136919, 136920, 
    138020, 138021, 138022, 138024, 138025, 138026, 138028, 138029, 138202, 138203, 138204, 138206, 138207, 138208, 138419, 138420, 138421,]
-
+ 
 on["PG1427+480"] = \
  [ 136925, 136926, 136927,]
 
 #        common parameters per source on the first dryrun (run1a, run2a)
 pars1 = {}
+pars1["PG0804+761"] = ""
+pars1["PG0953+414"] = ""
 pars1["PG0947+396"] = ""
 pars1["PG1202+281"] = "qagrade=3 speczoom=80,3"
 pars1["PG1402+261"] = "qagrade=3"
@@ -37,6 +45,8 @@ pars1["PG1427+480"] = "qagrade=3"
 
 #        common parameters per source on subsequent runs (run1b, run2b), e.g. bank=0 for WARES
 pars2 = {}
+pars2["PG0804+761"] = ""
+pars2["PG0953+414"] = ""
 pars2["PG0947+396"] = ""
 pars2["PG1202+281"] = ""
 pars2["PG1402+261"] = ""
