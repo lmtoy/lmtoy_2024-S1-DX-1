@@ -42,10 +42,15 @@ on["PG1427+480"] = \
 
 on["PG1216+069"] = \
  [152631,152632,152633,152635,152636,152637,152639,152640,152641,152644,152645,152646, # 2026-feb-21
+  153228,153229,153230,153232,153233,153234, # 2026-mar-01
  ]
 
 on["PG1352+183"] = \
   [152613,152614,152615,152617,152618,152619, #2026-feb-21
+  ]
+
+on["PG1114+445"] = \
+  [153201,153202,153203,153205,153206,153219,153220,153221,153223,153224,153225,153237,153238,153239,153241,153242,153243, #2026-feb-28 + 2026-mar-01
   ]
 #        common parameters per source on the first dryrun (run1a, run2a)
 pars1 = {}
@@ -58,6 +63,7 @@ pars1["PG1425+267"] = "qagrade=3 speczoom=80,3"
 pars1["PG1427+480"] = "qagrade=3"
 pars1["PG1216+069"] = "qagrade=3"
 pars1["PG1352+183"] = "qagrade=3"
+pars1["PG1114+445"] = ""
 #        common parameters per source on subsequent runs (run1b, run2b), e.g. bank=0 for WARES
 pars2 = {}
 pars2["PG0804+761"] = ""
@@ -69,6 +75,7 @@ pars2["PG1425+267"] = ""
 pars2["PG1427+480"] = ""
 pars2["PG1216+069"] = ""
 pars2["PG1352+183"] = ""
+pars2["PG1114+445"] = ""
 
 if __name__ == '__main__':    
     runs.mk_runs(project, on, pars1, pars2, None, sys.argv)

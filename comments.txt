@@ -28,3 +28,16 @@
 
 # PG1352+183
 152614  Removed c/b 1/5. #badcb=1/5
+
+# PG1216+069
+153228  #qagrade=0
+153229  #qagrade=0
+153230  #qagrade=0
+153232  #qagrade=0
+153233  #qagrade=0
+153234  #qagrade=0
+
+# PG1114+445
+153201  out of focus
+153202  out of focus
+153203  out of focus
